@@ -10,3 +10,9 @@ toggleBtn.addEventListener('click', () => {
     // aggiungo/tolgo la classe che fa apparire la sidebar
     sideBar.classList.toggle('show-sidebar');
 });
+
+// aggancio un ascoltatore di eventi al pulsante di chiusura
+
+closeBtn.addEventListener('click', () => {
+    sideBar.classList.remove('show-sidebar');
+});
